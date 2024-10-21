@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Automation Testing Course</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f0f4f8;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 80%;
+            margin: 50px auto;
+            background-color: white;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            padding: 20px;
+            border-radius: 8px;
+            text-align: center;
+        }
+        h1 {
+            color: #333;
+            font-size: 36px;
+            margin-bottom: 10px;
+        }
+        .logo {
+            width: 150px;
+            margin: 20px 0;
+        }
+        .description {
+            font-size: 18px;
+            line-height: 1.6;
+            color: #555;
+            text-align: justify;
+            margin-bottom: 30px;
+        }
+        .enroll-btn {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 15px 30px;
+            border-radius: 8px;
+            font-size: 18px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        .enroll-btn:hover {
+            background-color: #45a049;
+        }
+
+        /* Modal Styles using target */
+        #enroll {
+            display: none;
+        }
+        #enroll:target {
+            display: block;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+        }
+        .modal-content {
+            background-color: #fff;
+            margin: 10% auto;
+            padding: 20px;
+            width: 50%;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            position: relative;
+        }
+        .close {
+            color: #aaa;
+            position: absolute;
+            right: 20px;
+            top: 10px;
+            font-size: 28px;
+            font-weight: bold;
+            text-decoration: none;
+        }
+        .modal h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .modal input, .modal select {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        .submit-btn {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 12px;
+            width: 100%;
+            font-size: 16px;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+        .submit-btn:hover {
+            background-color: #333;
+        }
+    </style>
+</head>
+<body>
+    <form action="successful.html">
+<div class="container">
+    <h1>Automation Testing Course</h1>
+    <img src="https://cdn-icons-png.flaticon.com/512/3126/3126346.png" alt="Automation Testing Logo" class="logo">
+    
+    <p class="description">
+        QuntNex stands out as a premier destination for mastering software testing. Our software testing training program is meticulously designed to encompass not just the fundamentals but also the latest frameworks that are currently making waves in the industry.
+        <br><br>
+        The globally recognized certification offered upon completion is a testament to the quality of education provided, opening doors to lucrative career opportunities worldwide.
+        <br><br>
+        Whether you’re looking to kickstart your journey in software testing or aiming to upscale your existing skill set, QuntNex’s software testing training in Bangalore is the gateway to success in the dynamic world of testing.
+    </p>
+
+    <a href="#enroll" class="enroll-btn">Enroll Now</a>
+</div>
+
+<!-- Modal -->
+<div id="enroll" class="modal">
+    <div class="modal-content">
+        <a href="#" class="close">&times;</a>
+        <h2>Enroll for Automation Testing</h2>
+        <form>
+            <input type="text" id="fullname" name="fullname" placeholder="Full Name" required>
+            <input type="tel" id="phone" name="phone" placeholder="Phone Number" required>
+            <input type="email" id="email" name="email" placeholder="Email Address" required>
+            <input type="text" id="city" name="city" placeholder="City" required>
+            <label for="stream">UG/PG Stream:</label>
+            <select id="stream" name="stream">
+                <option value="B.TECH">B.TECH</option>
+                <option value="MCA">MCA</option>
+                <option value="BCA">BCA</option>
+                <option value="M.TECH">M.TECH</option>
+                <option value="BSC">BSC</option>
+                <option value="CSE">CSE</option>
+                <option value="EEE">EEE</option>
+                <option value="ME">ME</option>
+                <option value="MSC">MSC</option>
+            </select>
+            <input type="number" id="passoutYear" name="passoutYear" placeholder="Year of Pass Out" required>
+            <input type="submit" class="submit-btn" value="Submit">
+        </form>
+    </div>
+</div>
+</form>
+</body>
+</html>

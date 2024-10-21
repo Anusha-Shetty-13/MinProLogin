@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Courses</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background:#333; /* Gradient background */
+            color: #f5f5f5; /* Light color for text */
+            margin: 0;
+            padding: 0;
+            height: 100vh; /* Full height */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .course-container {
+            width: 80%;
+            max-width: 800px; /* Maximum width for larger screens */
+            text-align: center;
+            background-color: rgba(0, 0, 0, 0.8); /* Dark background with some transparency */
+            border-radius: 10px; /* Rounded corners */
+            padding: 20px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5); /* Shadow for the container */
+        }
+        h1 {
+            color: #f5f5f5; /* Light color for the heading */
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7); /* Text shadow */
+            padding: 10px; /* Padding around the heading */
+            margin-bottom: 20px; /* Space below the heading */
+        }
+        .course-list {
+            list-style-type: none;
+            padding: 0;
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Responsive grid layout */
+            gap: 20px; /* Space between cards */
+        }
+        .course-card {
+            background-color: #333; /* Dark background for cards */
+            padding: 8px;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Shadow for cards */
+            transition: transform 0.3s; /* Smooth transition for effects */
+        }
+        .course-card:hover {
+            transform: translateY(-5px); /* Lift effect on hover */
+        }
+        .course-link {
+            text-decoration: none;
+            font-size: 18px;
+            color: #f5f5f5; /* Light color for course links */
+            padding: 12px;
+            display: block; /* Make the link block-level */
+            text-align: center; /* Center text in the link */
+            border: 0px solid #2c2b2b; /* Dark border for links */
+            border-radius: 5px;
+            transition: background-color 0.3s; /* Smooth transition for background color */
+        }
+        .course-link:hover {
+            background-color: #d2042d; /* Hover background color */
+            color: white;
+        }
+        .enroll-btn {
+            margin-top: 20px;
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #d2042d; /* Cherry red background */
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s; /* Smooth transition */
+        }
+        .enroll-btn:hover {
+            background-color: grey; /* Grey on hover */
+        }
+    </style>
+</head>
+<body>
+
+<div class="course-container">
+    <h1>Available Courses</h1>
+    <ul class="course-list">
+        <li class="course-card">
+            <a href="java.html" class="course-link" id="java">Java Full Stack</a>
+        </li>
+        <li class="course-card">
+            <a href="pythonfullstack.html" class="course-link" id="python">Python Full Stack</a>
+        </li>
+        <li class="course-card">
+            <a href="automation-testing.html" class="course-link" id="testing">Automation Testing</a>
+        </li>
+    </ul>
+    <br>
+    <button class="enroll-btn">Enroll Now</button>
+</div>
+
+</body>
+</html>
